@@ -1,0 +1,64 @@
+TEST SCENARIO			TEST CASE ID 		TEST CASE DESCRIPTION 				           	PRE CONDITION 					                   TEST STEPS					                           TEST DATA				                 EXPECTED R	RESULT									                                                      ACTUAL RESULT		   PRIORITY		         STATUS		               DEFECT REMARK	
+																																									
+LOGIN SCENARIO			TC-LF-001		       VALID LOGIN					                 1.LAUNCH THE BROWSER 					       1.LAUNCH THE APPLICATION URL					     PHONE NUMBER-986545652				USER SHOULD BE LOGGED IN SUCCESFULLY USER GOT SUCCESFULLY LOGGED IN									                     	NA		             NA		           PASSED		                  NA	
+										                                                         2.POSSES URL OF THE APPLICATION		   2.CLICK ON THE LOGIN BUTTON																										
+										                                                         3.USER SHOULD BE REGISTERED				   3.ENTER REGISTERED PHONE NUMBER																										
+															                                               4.CLICK ON SEND ONE TIME PASSWORD																										
+															                                                 BUTTON 																										
+															                                               5.ENTER 6 DIGIT OTP RECEIVED ON THE																										
+															                                                 PHONE NUMBER																										
+																																									
+																																									
+LOGIN SCENARIO 			TC-LF-002		INVALID LOGIN WITH UNREGISTERED/INVALID 		 1.LAUNCH THE BROWSER					            1.LAUNCH THE APPLICATION URL					PHONE NUMBER-2323232323				USER SHOULD NOT BE		E ASKED FOR OTP AND EVEN AFTER ENTERING THE INVALID						                     MEDIUM				                        FAIL		                 IT IS FUNCTIONAL DEFECT	
+										           PHONE NUMBER                                  2.POSSES URL OF THE APPLICATION					2.CLICK ON THE LOGIN BUTTON									                        PHONE NUMBER USER IS ASKED FOR OTP																	
+															                                               3.ENTER UNREGISTERED/INVALID PHONE 																										
+															                                                 NUMBER																										
+															                                               4.CLICK ON SEND ONE TIME PASSWORD																										
+																																									
+LOGIN SCENARIO			TC-LF-003		INVALID LOGIN WITH INVALID OTP					     1.LAUNCH THE BROWSER					            1.LAUNCH THE APPLICATION URL					PHONE NUMBER-965231452				USER SHOULD NOT BE LOGGED IN AND SHOULD DISPLAY AN ERROR MESSAGE STATONG INVALID OTP																	
+										                                                         2.POSSES URL OF THE APPLICATION 					2.CLICK ON THE LOGIN BUTTON																										
+										                                                         3.USER SHOULD BE REGISTERED					    3.ENTER REGISTERED PHONE NUMBER																										
+															                                               4.CLICK ON SEND ONE TIME PASSWORD																										
+															                                                 BUTTON																										
+															                                               5.ENTER WRONG/INVALID 6DIGIT OTP																							
+																																									
+LOGIN SCENARIO			TC-LF-004	INVALID LOGIN WITHOUT ENTERING					       1.LAUNCH THE BROWSER					             1.LAUNCH THE APPLICATION URL																										
+					                    THE PHONE NUMBER					                     2.POSSES URL OF THE APPLICATION					 2.CLICK ON THE LOGIN BUTTON					    NA				                USER SHOULD NOT BE LOGGED IN AND  IN AND AN ERROR MESSAGE STATING INVALID PHONE NUMBER 														
+															                                               3.DO NOT ENTER THE PHONE NUMBER									                                                            SHOULD BE DISPLAYED																	
+															                                               4.CLICK ON SEND ONE TIME PASSWORD 																										
+															                                                 BUTTON																										
+																																									
+LOGIN SCENARIO			TC-LF-005		VALID LOGIN ENTERING THE PHONE NUMBER				  1.LAUNCH THE BROWSER																															
+										                                                          2.POSSES URL OF THE APPLICATION																															
+										                                                          3.USER SHOULD BE REGISTERED					     1.LAUNCH THE APPLICATION URL																										
+															                                                                                         2.CLICK ON THE LOGIN BUTTON					8080808080				                         USER GOT SUCCESFULLY 										                                                     N/A		          N/A		          PASSED		                   N/A	
+															                                                                                         3.ENTER REGISTERED PHONE NUMBER																					
+															                                                                                         4.CLICK ON SEND ONE TIME PASSWORD																										
+															                                                                                           BUTTON																										
+																																									
+LOGIN SCENARIO			TC-LF-006		INVALID LOGIN WITH OUT ATTACHING					    1.LAUNCH THE BROWSER																															
+					                      KYC					                                  2.POSSES URL OF THE APPLICATION					 1.LAUNCH THE APPLICATION URL									                                   USER SHOULD NOT BE LOGGED IN AND AN ERROR MESSAGE																	
+															                                                                                         2.CLICK ON THE LOGIN BUTTON					N/A				                                 STATING WITH OUT ATTACHING KYC SHOULD BE									                                    MEDIUM		        N/A	        	   FAIL		                     N/A	
+															                                                                                         3.ENTER WITH OUT ATTACHING KYC								 	                                 DISPLAYED																	
+															                                                                                         4.CLICK TO SEND KYC																										
+																																									
+LOGIN SCENARIO			TC-LF-007		VALID LOGIN WITH ATTACHING KYC					      1.LAUNCH THE BROWSER					           1.LAUNCH	THE APPLICATION URL				   N/A				                               USER ATTACHING THE KYC																	
+										                                                          2.POSSES URL OF THE APPLICATION					 2.CLICK ON THE LOGIN BUTTON									                                   USER GOT  SUCCESFULLY LOGGED IN										                                           N/A		           N/A		         PASSED	                    	N/A	
+										                                                          3.USER SHOULD BE REGISTERED					     3.ENTER WITH ATTACHING KYC																										
+															                                                                                         4.CLICK TO SEND KYC																										
+																																									
+LOGIN SCENARIO			TC-LF-008		INVALID  LOGIN WITH OUT CREDIT					      1.LAUNCH THE BROWSER					           1.LAUNCH THE APPLICATION URL																										
+					                      CARD DETAILS					                        2.POSSES URL OF THE APPLICATION					 2.CLICK ON THE LOGIN BUTTON					 N/A				                               USER SHOULD NOT BE ASKED FOR CREDIT CARD DETAILS EVEN										                    MEDIUM		         N/A		         FAIL	                      	N/A	
+															                                                                                         3.ENTER INVALID CREDIT CARD DETAILS									                           OFTER ENTERING THE INVALID CREDIT CARD DETAILS ASKED																	
+															                                                                                         4.CLICK TO SEND CREDIT CARD DETAILS									                           FOR CREDIT CARD																	
+																																									
+LOGIN SCENARIO			TC-LF-009		VALID LOGIN WITH CREDIT CARD					        1.LAUNCH THE BROWSER					           1.LAUNCH THE APPLICATION URL					  N/A				                               USER SHOULD		BE LOGGED IN SUCCESFULLY USER GOT								                              N/A		             N/A		         PASSED		                    N/A	
+					                      DETAILS					                              2.POSSES URL OF THE APPLICATION					 2.CLICK ON THE LOGIN BUTTON									                                   SUCCESFULLY LOGGED IN																	
+										                                                          3.USER SHOULD BE REGISTERED					     3.ENTER VALID CREDIT CARD DETAILS																										
+															                                                                                         4.CLICK TO SEND CREDIT CARD DETAILS																										
+																																									
+LOGIN SCENARIO			TC-LF-010		INVALID LOGIN WITHOUT OFFER 					        1.LAUNCH THE BROWSER					           1.LAUNCH THE APPLICATION URL									                                   USER SHOULD NOT BE LOGGED IN AND AN ERROR MESSAGE										                       N/A		             N/A	         	FAIL		                    N/A	
+					                      CREDIT CARD					                          2.POSSES URL OF THE APPLICATION					 2.CLICK ON THE LOGIN BUTTON					N/A				                                 STATING INVALID OFFER CREDIT CARD DETAILS SHOULD BE																	
+															                                                                                         3.ENTER WITH OUT OFFER CREDIT CARD									                             DISPLAYED																	
+															                                                                                         4.CLICK TO SEND WITH OUT OFFER CREDIT CARD																										
+ 
